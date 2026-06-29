@@ -3,438 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projeto Recomeço — Seu painel de acompanhamento dos 21 dias." />
+  <meta name="description" content="Projeto Recomeço — Seu Painel de Evolução." />
   <meta name="robots" content="noindex, nofollow" />
   <meta name="theme-color" content="#F7F5F2" />
-
-  <title>Meu Painel — Projeto Recomeço</title>
-
-  <!-- ========================================= -->
-  <!-- FONTS -->
-  <!-- ========================================= -->
+  <title>Painel · Projeto Recomeço</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- ========================================= -->
-  <!-- CSS -->
-  <!-- ========================================= -->
-<link rel="stylesheet" href="../css/reset.css" />
-<link rel="stylesheet" href="../css/variables.css" />
-<link rel="stylesheet" href="../css/typography.css" />
-<link rel="stylesheet" href="../css/layout.css" />
-<link rel="stylesheet" href="../css/components.css" />
-<link rel="stylesheet" href="../css/animations.css" />
-<link rel="stylesheet" href="../css/responsive.css" />
-<link rel="stylesheet" href="dashboard.css" /> <script src="../js/utils.js" defer></script>
+  
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="dashboard.css" />
 </head>
-<body class="dashboard-body">
+<body>
 
-  <!-- ========================================= -->
-  <!-- NAVBAR DO DASHBOARD -->
-  <!-- ========================================= -->
-  <header class="up-navbar up-navbar--dashboard" role="banner">
-    <nav class="up-navbar__inner container" aria-label="Navegação do painel">
-
-      <a href="../index.html" class="up-navbar__logo" aria-label="Projeto Recomeço — página inicial">
-        <span class="up-navbar__logo-text">Recomeço</span>
-      </a>
-
-      <div class="up-navbar__dashboard-center" aria-hidden="true">
-        <span class="up-navbar__day-label" id="navbarDayLabel">Dia <strong id="navbarDayNumber">—</strong></span>
-      </div>
-
-      <div class="up-navbar__dashboard-actions">
-        <button
-          class="up-navbar__profile-btn"
-          type="button"
-          aria-label="Abrir perfil"
-          id="profileBtn"
-        >
-          <span class="up-navbar__profile-avatar" aria-hidden="true" id="profileAvatar">R</span>
-        </button>
-      </div>
-
-    </nav>
+  <header class="up-navbar">
+    <div class="container up-navbar__inner">
+      <span class="up-navbar__brand">Projeto Recomeço</span>
+      <nav class="up-navbar__nav" aria-label="Navegação do painel">
+        <a href="dashboard.html" class="is-active">Painel</a>
+        <a href="../index.html">Sair</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="conteudo-principal" class="dashboard-main">
-    <div class="container">
-
-      <!-- ========================================= -->
-      <!-- SAUDAÇÃO INICIAL -->
-      <!-- ========================================= -->
-      <section class="up-dash-greeting" aria-labelledby="greeting-titulo">
-        <div class="up-dash-greeting__inner">
-          <div class="up-dash-greeting__text">
-            <p class="up-dash-greeting__sub" id="greetingTime">Bom dia</p>
-            <h1 id="greeting-titulo" class="up-dash-greeting__title" id="greetingTitle">
-              Pronto para o dia de hoje?
-            </h1>
-            <p class="up-dash-greeting__message" id="greetingMessage">
-              Cada dia que você aparece é uma vitória. A missão de hoje espera por você.
-            </p>
+  <main class="container">
+    <section class="up-dashboard-hero">
+      <div class="up-card">
+        <h1 class="up-section-title">Seu Recomeço</h1>
+        <p class="up-section-subtitle">A consistência supera a intensidade. Veja abaixo o seu progresso acumulado:</p>
+        
+        <div class="up-progress-container" style="margin-top: 20px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-weight: 500;">Progresso Geral</span>
+            <span id="dashboardProgressLabel" style="font-weight: 600; color: var(--color-accent);">0%</span>
           </div>
-          <div class="up-dash-greeting__badge-wrap" aria-label="Sequência atual">
-            <div class="up-dash-streak up-card" id="streakCard">
-              <span class="up-dash-streak__number" id="streakNumber">0</span>
-              <span class="up-dash-streak__label">dias seguidos</span>
-              <span class="up-dash-streak__icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 2C7 6 4 8 4 11a6 6 0 0012 0c0-3-3-5-6-9z" stroke="var(--color-accent)" stroke-width="1.4" stroke-linejoin="round"/>
-                  <path d="M10 14a2 2 0 100-4 2 2 0 000 4z" fill="var(--color-accent)" opacity=".4"/>
-                </svg>
-              </span>
-            </div>
+          <div style="width: 100%; height: 12px; background: var(--color-border); border-radius: var(--radius-full); overflow: hidden;">
+            <div id="dashboardProgressBar" style="width: 0%; height: 100%; background: var(--color-accent); transition: width 0.4s ease;"></div>
           </div>
         </div>
-      </section>
-
-      <!-- ========================================= -->
-      <!-- BARRA DE PROGRESSO -->
-      <!-- ========================================= -->
-      <section class="up-dash-progress-section" aria-labelledby="progress-titulo">
-        <div class="up-dash-progress-header">
-          <h2 id="progress-titulo" class="up-dash-progress-title">Seu progresso</h2>
-          <span class="up-dash-progress-pct" id="progressPct" aria-live="polite">0%</span>
-        </div>
-        <div
-          class="up-progress"
-          role="progressbar"
-          aria-valuemin="0"
-          aria-valuemax="100"
-          aria-valuenow="0"
-          aria-labelledby="progress-titulo"
-          id="progressBar"
-        >
-          <div class="up-progress__fill" id="progressFill" style="width: 0%"></div>
-        </div>
-        <p class="up-dash-progress-sub" id="progressSub">
-          <span id="progressDaysDone">0</span> de 21 dias concluídos
-        </p>
-      </section>
-
-      <!-- ========================================= -->
-      <!-- GRID PRINCIPAL -->
-      <!-- ========================================= -->
-      <div class="up-dash-grid">
-
-        <!-- ========================================= -->
-        <!-- MISSÃO DO DIA -->
-        <!-- ========================================= -->
-        <section class="up-dash-mission up-card" aria-labelledby="mission-titulo">
-          <header class="up-dash-mission__header">
-            <div>
-              <span class="up-badge" id="missionDayBadge">Dia 1</span>
-              <h2 id="mission-titulo" class="up-dash-mission__title" id="missionTitle">
-                O primeiro passo
-              </h2>
-            </div>
-            <span class="up-dash-mission__status" id="missionStatus" aria-label="Status da missão">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="11" cy="11" r="9.5" stroke="var(--color-border-mid)" stroke-width="1.4"/>
-              </svg>
-            </span>
-          </header>
-
-          <p class="up-dash-mission__text" id="missionText">
-            Hoje é sobre começar. Caminhe por 15 minutos no ritmo que for confortável.
-            Não precisa ser rápido. Só precisa acontecer.
-          </p>
-
-          <div class="up-dash-mission__checklist" id="missionChecklist" role="group" aria-label="Checklist da missão">
-            <label class="up-checklist-item" for="check1">
-              <input class="up-checklist-item__input sr-only" type="checkbox" id="check1" data-check="1" />
-              <span class="up-checklist-item__box" aria-hidden="true">
-                <svg class="up-checklist-item__check" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12" stroke-dashoffset="12"/>
-                </svg>
-              </span>
-              <span class="up-checklist-item__label">Separei um horário para a missão de hoje</span>
-            </label>
-
-            <label class="up-checklist-item" for="check2">
-              <input class="up-checklist-item__input sr-only" type="checkbox" id="check2" data-check="2" />
-              <span class="up-checklist-item__box" aria-hidden="true">
-                <svg class="up-checklist-item__check" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12" stroke-dashoffset="12"/>
-                </svg>
-              </span>
-              <span class="up-checklist-item__label">Completei os 15 minutos de caminhada</span>
-            </label>
-
-            <label class="up-checklist-item" for="check3">
-              <input class="up-checklist-item__input sr-only" type="checkbox" id="check3" data-check="3" />
-              <span class="up-checklist-item__box" aria-hidden="true">
-                <svg class="up-checklist-item__check" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12" stroke-dashoffset="12"/>
-                </svg>
-              </span>
-              <span class="up-checklist-item__label">Tomei água suficiente durante o dia</span>
-            </label>
-          </div>
-
-          <footer class="up-dash-mission__footer">
-            <a
-              href="dia01.html"
-              class="up-button up-button--primary up-button--md"
-              id="missionDayLink"
-              aria-label="Ir para a página completa do Dia 1"
-            >
-              Ver missão completa
-            </a>
-            <button
-              type="button"
-              class="up-button up-button--ghost up-button--md up-dash-mission__done-btn"
-              id="missionDoneBtn"
-              aria-label="Marcar dia como concluído"
-            >
-              Marcar como concluído
-            </button>
-          </footer>
-        </section>
-
-        <!-- ========================================= -->
-        <!-- CALENDÁRIO -->
-        <!-- ========================================= -->
-        <section class="up-dash-calendar up-card" aria-labelledby="calendar-titulo">
-          <header class="up-dash-calendar__header">
-            <h2 id="calendar-titulo" class="up-dash-calendar__title">21 dias</h2>
-            <span class="up-badge" id="calendarBadge">0 / 21</span>
-          </header>
-
-          <div
-            class="up-dash-calendar__grid"
-            id="dashCalendar"
-            role="grid"
-            aria-label="Calendário de 21 dias"
-          >
-            <!-- Gerado via JS -->
-          </div>
-
-          <div class="up-dash-calendar__legenda" aria-label="Legenda do calendário">
-            <span class="up-dash-calendar__leg-item">
-              <span class="up-dash-calendar__leg-dot up-dash-calendar__leg-dot--done" aria-hidden="true"></span>
-              Concluído
-            </span>
-            <span class="up-dash-calendar__leg-item">
-              <span class="up-dash-calendar__leg-dot up-dash-calendar__leg-dot--active" aria-hidden="true"></span>
-              Hoje
-            </span>
-            <span class="up-dash-calendar__leg-item">
-              <span class="up-dash-calendar__leg-dot" aria-hidden="true"></span>
-              Pendente
-            </span>
-          </div>
-        </section>
-
-        <!-- ========================================= -->
-        <!-- RECEITA DO DIA -->
-        <!-- ========================================= -->
-        <section class="up-dash-recipe up-card" aria-labelledby="recipe-titulo">
-          <header class="up-dash-recipe__header">
-            <div>
-              <span class="up-badge up-badge--sm">Receita do dia</span>
-              <h2 id="recipe-titulo" class="up-dash-recipe__title" id="recipeTitle">
-                Vitamina verde energizante
-              </h2>
-            </div>
-            <button
-              type="button"
-              class="up-dash-recipe__fav"
-              id="recipeFavBtn"
-              aria-label="Adicionar aos favoritos"
-              aria-pressed="false"
-            >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M10 17s-7-4.5-7-9a4 4 0 018 0 4 4 0 018 0c0 4.5-7 9-7 9z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </header>
-
-          <p class="up-dash-recipe__desc" id="recipeDesc">
-            Espinafre, banana, gengibre e água de coco. Pronto em 5 minutos,
-            rico em potássio e magnésio.
-          </p>
-
-          <ul class="up-dash-recipe__ingredients" id="recipeIngredients" aria-label="Ingredientes">
-            <li>1 xícara de espinafre fresco</li>
-            <li>1 banana madura</li>
-            <li>1 colher de chá de gengibre ralado</li>
-            <li>200 ml de água de coco</li>
-          </ul>
-
-          <footer class="up-dash-recipe__footer">
-            <span class="up-dash-recipe__time" aria-label="Tempo de preparo">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/>
-                <path d="M7 4v3l2 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-              </svg>
-              5 min
-            </span>
-            <span class="up-recipe__tag" id="recipeTag">Anti-inflamatória</span>
-          </footer>
-        </section>
-
-        <!-- ========================================= -->
-        <!-- DIÁRIO -->
-        <!-- ========================================= -->
-        <section class="up-dash-diary up-card" aria-labelledby="diary-titulo">
-          <header class="up-dash-diary__header">
-            <h2 id="diary-titulo" class="up-dash-diary__title">Diário de hoje</h2>
-            <span class="up-badge up-badge--sm" id="diaryDayBadge">Dia 1</span>
-          </header>
-
-          <div class="up-dash-diary__humor" role="group" aria-label="Como você se sentiu hoje?">
-            <p class="up-dash-diary__humor-label">Como você se sentiu?</p>
-            <div class="up-dash-diary__emojis" id="diaryEmojis">
-              <button
-                type="button"
-                class="up-diary-emoji"
-                data-humor="otimo"
-                aria-label="Ótimo"
-                aria-pressed="false"
-              >😊</button>
-              <button
-                type="button"
-                class="up-diary-emoji"
-                data-humor="bem"
-                aria-label="Bem"
-                aria-pressed="false"
-              >🙂</button>
-              <button
-                type="button"
-                class="up-diary-emoji"
-                data-humor="neutro"
-                aria-label="Neutro"
-                aria-pressed="false"
-              >😐</button>
-              <button
-                type="button"
-                class="up-diary-emoji"
-                data-humor="cansado"
-                aria-label="Cansado"
-                aria-pressed="false"
-              >😔</button>
-            </div>
-          </div>
-
-          <div class="up-dash-diary__field">
-            <label class="up-dash-diary__field-label" for="diaryText">
-              O que você notou de diferente hoje?
-            </label>
-            <textarea
-              class="up-dash-diary__textarea"
-              id="diaryText"
-              name="diaryText"
-              rows="4"
-              placeholder="Escreva aqui... Só você vai ler."
-              aria-describedby="diaryHint"
-            ></textarea>
-            <p class="up-dash-diary__hint" id="diaryHint">
-              Suas respostas são salvas automaticamente e ficam no seu dispositivo.
-            </p>
-          </div>
-
-          <footer class="up-dash-diary__footer">
-            <button
-              type="button"
-              class="up-button up-button--primary up-button--md"
-              id="diarySaveBtn"
-              aria-label="Salvar entrada do diário"
-            >
-              Salvar reflexão
-            </button>
-            <span class="up-dash-diary__saved-label" id="diarySavedLabel" aria-live="polite" hidden>
-              Salvo ✓
-            </span>
-          </footer>
-        </section>
-
       </div>
-      <!-- /up-dash-grid -->
+    </section>
 
-    </div>
-    <!-- /container -->
+    <section class="up-card" style="margin-top: 24px;">
+      <h2>Seus 21 Dias</h2>
+      <p style="color: var(--color-text-mid); font-size: var(--text-sm); margin-bottom: 20px;">Selecione o dia atual para ver sua missão:</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 12px;" id="dashboardDaysGrid">
+        </div>
+    </section>
   </main>
 
-  <!-- ========================================= -->
-  <!-- MODAL DE PERFIL -->
-  <!-- ========================================= -->
-  <div
-    class="up-modal"
-    id="profileModal"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="profileModal-titulo"
-    hidden
-  >
-    <div class="up-modal__overlay" id="profileModalOverlay" aria-hidden="true"></div>
-    <div class="up-modal__box up-card">
-      <header class="up-modal__header">
-        <h2 id="profileModal-titulo" class="up-modal__title">Meu perfil</h2>
-        <button
-          type="button"
-          class="up-modal__close"
-          id="profileModalClose"
-          aria-label="Fechar modal de perfil"
-        >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-            <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </button>
-      </header>
-
-      <div class="up-modal__body">
-        <div class="up-modal__avatar-wrap" aria-hidden="true">
-          <span class="up-modal__avatar" id="modalAvatar">R</span>
-        </div>
-
-        <div class="up-modal__stats" aria-label="Estatísticas do programa">
-          <div class="up-modal__stat">
-            <strong class="up-modal__stat-value" id="modalDaysDone">0</strong>
-            <span class="up-modal__stat-label">dias concluídos</span>
-          </div>
-          <div class="up-modal__stat">
-            <strong class="up-modal__stat-value" id="modalStreak">0</strong>
-            <span class="up-modal__stat-label">sequência atual</span>
-          </div>
-          <div class="up-modal__stat">
-            <strong class="up-modal__stat-value" id="modalPct">0%</strong>
-            <span class="up-modal__stat-label">do programa</span>
-          </div>
-        </div>
-
-        <div class="up-modal__progress-wrap">
-          <div
-            class="up-progress"
-            role="progressbar"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-valuenow="0"
-            aria-label="Progresso total do programa"
-            id="modalProgressBar"
-          >
-            <div class="up-progress__fill" id="modalProgressFill" style="width: 0%"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================= -->
-  <!-- TOAST (injetado via JS) -->
-  <!-- ========================================= -->
-
-  <!-- ========================================= -->
-  <!-- JS -->
-  <!-- ========================================= -->
   <script src="../js/utils.js" defer></script>
   <script src="../js/storage.js" defer></script>
-  <script src="../js/animation.js" defer></script>
   <script src="../js/progress.js" defer></script>
-  <script src="../js/ui.js" defer></script>
   <script src="dashboard.js" defer></script>
-
 </body>
 </html>
