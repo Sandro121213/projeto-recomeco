@@ -1,0 +1,297 @@
+/* ==========================================
+   RESPONSIVE — MOBILE FIRST
+========================================== */
+
+/* ----------------------------------------
+   BASE: MOBILE (< 480px)
+   Todos os estilos base já são mobile.
+   Ajustes adicionais abaixo.
+---------------------------------------- */
+
+/* Hero */
+.up-hero__title {
+  font-size: var(--text-3xl);
+}
+
+.up-hero__proof {
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.up-hero__proof-divider {
+  width: 48px;
+  height: 1px;
+}
+
+/* Seções */
+section {
+  padding-block: var(--space-16);
+}
+
+/* Grids para coluna única em mobile */
+.up-problema__grid,
+.up-beneficios__grid,
+.up-receitas-preview__grid {
+  grid-template-columns: 1fr;
+}
+
+/* Comparativo empilhado */
+.up-comparativo__grid {
+  grid-template-columns: 1fr;
+}
+
+.up-comparativo__divisor {
+  padding-top: 0;
+  justify-content: flex-start;
+}
+
+/* Método pilares empilhados */
+.up-metodo__pilar {
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.up-metodo__pilar-number {
+  font-size: var(--text-2xl);
+}
+
+/* Transformação números empilhados */
+.up-transformacao__numeros {
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.up-transformacao__quote-text {
+  font-size: var(--text-2xl);
+}
+
+/* Garantia empilhada */
+.up-garantia__card {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Footer topo empilhado */
+.up-footer__top {
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.up-footer__nav {
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+/* Seção label centralizada mobile */
+.up-section-subtitle {
+  margin-bottom: var(--space-8);
+}
+
+/* Oferta preço */
+.up-oferta__preco-valor {
+  font-size: var(--text-4xl);
+}
+
+/* Calendário legenda */
+.up-calendario-preview__legenda {
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* Navbar */
+.up-navbar__inner {
+  padding-inline: var(--space-4);
+}
+
+/* ----------------------------------------
+   TABLET (≥ 640px)
+---------------------------------------- */
+
+@media (min-width: 640px) {
+
+  :root {
+    --gutter: var(--space-8);
+  }
+
+  /* Hero */
+  .up-hero__title {
+    font-size: var(--text-4xl);
+  }
+
+  .up-hero__proof {
+    flex-direction: row;
+    gap: var(--space-8);
+  }
+
+  .up-hero__proof-divider {
+    width: 1px;
+    height: 48px;
+  }
+
+  /* Seções */
+  section {
+    padding-block: var(--space-20);
+  }
+
+  /* Problema 2 colunas */
+  .up-problema__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Receitas 2 colunas */
+  .up-receitas-preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Comparativo restaurado */
+  .up-comparativo__grid {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .up-comparativo__divisor {
+    padding-top: var(--space-16);
+    justify-content: center;
+  }
+
+  /* Método pilar horizontal */
+  .up-metodo__pilar {
+    flex-direction: row;
+    gap: var(--space-6);
+  }
+
+  .up-metodo__pilar-number {
+    font-size: var(--text-4xl);
+  }
+
+  /* Transformação números em linha */
+  .up-transformacao__numeros {
+    flex-direction: row;
+    gap: var(--space-12);
+  }
+
+  /* Garantia horizontal */
+  .up-garantia__card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Footer topo horizontal */
+  .up-footer__top {
+    flex-direction: row;
+  }
+
+}
+
+/* ----------------------------------------
+   TABLET LARGO / DESKTOP PEQUENO (≥ 768px)
+---------------------------------------- */
+
+@media (min-width: 768px) {
+
+  .up-hero__title {
+    font-size: var(--text-5xl);
+  }
+
+  .up-section-title {
+    font-size: var(--text-3xl);
+  }
+
+  /* Benefícios 2 colunas */
+  .up-beneficios__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Receitas 3 colunas */
+  .up-receitas-preview__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Accordion mais espaçoso */
+  .up-accordion__trigger {
+    padding: var(--space-6) var(--space-8);
+  }
+
+}
+
+/* ----------------------------------------
+   DESKTOP (≥ 1024px)
+---------------------------------------- */
+
+@media (min-width: 1024px) {
+
+  :root {
+    --gutter: var(--space-10);
+    --section-padding: var(--space-24);
+  }
+
+  /* Hero full */
+  .up-hero {
+    padding-block: var(--space-32) var(--space-24);
+  }
+
+  /* Benefícios 3 colunas */
+  .up-beneficios__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Transformação quote maior */
+  .up-transformacao__quote-text {
+    font-size: var(--text-3xl);
+  }
+
+  .up-transformacao__numeros {
+    gap: var(--space-20);
+  }
+
+  /* Seção label */
+  .up-section-subtitle {
+    margin-bottom: var(--space-12);
+  }
+
+}
+
+/* ----------------------------------------
+   LARGE DESKTOP (≥ 1280px)
+---------------------------------------- */
+
+@media (min-width: 1280px) {
+
+  :root {
+    --gutter: var(--space-12);
+  }
+
+  .up-hero__title {
+    font-size: clamp(3.25rem, 5vw, 4.5rem);
+  }
+
+  .up-section-title {
+    font-size: clamp(2rem, 3vw, 2.75rem);
+  }
+
+}
+
+/* ----------------------------------------
+   PRINT
+---------------------------------------- */
+
+@media print {
+
+  .up-navbar,
+  .up-oferta,
+  .up-footer {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .up-card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+}

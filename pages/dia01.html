@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projeto Recomeço — Dia 1: O primeiro passo. Sua missão de hoje é simples: caminhe por 15 minutos." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#F7F5F2" />
+
+  <title>Dia 1 — O primeiro passo · Projeto Recomeço</title>
+
+  <!-- ========================================= -->
+  <!-- FONTS -->
+  <!-- ========================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ========================================= -->
+  <!-- CSS -->
+  <!-- ========================================= -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="dia.css" />
+</head>
+<body class="dia-body">
+
+  <!-- ========================================= -->
+  <!-- NAVBAR -->
+  <!-- ========================================= -->
+  <header class="up-navbar up-navbar--dia" role="banner">
+    <nav class="up-navbar__inner container" aria-label="Navegação do programa">
+
+      <a href="dashboard.html" class="up-navbar__back" aria-label="Voltar ao painel">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M12.5 5l-5 5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Painel</span>
+      </a>
+
+      <div class="up-navbar__dia-center">
+        <span class="up-badge">Dia 1 de 21</span>
+      </div>
+
+      <div class="up-navbar__dia-progress" aria-label="Progresso geral">
+        <div class="up-navbar__dia-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progresso do programa" id="navProgressBar">
+          <div class="up-navbar__dia-bar-fill" id="navProgressFill" style="width: 0%"></div>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <main id="conteudo-principal" class="dia-main">
+    <div class="container container--mid">
+
+      <!-- ========================================= -->
+      <!-- HERO DO DIA -->
+      <!-- ========================================= -->
+      <section class="up-dia-hero" aria-labelledby="dia-titulo">
+
+        <div class="up-dia-hero__meta">
+          <span class="up-badge">Semana 1 — Ativação</span>
+          <span class="up-dia-hero__numero" aria-hidden="true">01</span>
+        </div>
+
+        <h1 id="dia-titulo" class="up-dia-hero__title">
+          O primeiro passo
+        </h1>
+
+        <p class="up-dia-hero__subtitulo">
+          Hoje é sobre começar. Só isso. E começar já é mais do que a maioria faz.
+        </p>
+
+        <div class="up-dia-hero__status" id="diaHeroStatus">
+          <span class="up-dia-hero__status-dot" aria-hidden="true"></span>
+          <span class="up-dia-hero__status-label" id="diaStatusLabel">Missão pendente</span>
+        </div>
+
+      </section>
+
+      <!-- ========================================= -->
+      <!-- OBJETIVO -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="objetivo-titulo">
+        <h2 id="objetivo-titulo" class="up-dia-section-title">Objetivo do dia</h2>
+        <div class="up-dia-objetivo up-card" data-animate>
+          <figure class="up-dia-objetivo__icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="1.5"/>
+              <path d="M13 20l5 5 9-9" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
+          <div class="up-dia-objetivo__content">
+            <p class="up-dia-objetivo__text">
+              Caminhe por <strong>15 minutos</strong> no ritmo que for confortável para você.
+              Não precisa ser rápido. Não precisa ser longe. Só precisa acontecer.
+            </p>
+            <div class="up-dia-objetivo__details" aria-label="Detalhes da missão">
+              <span class="up-dia-objetivo__detail">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.2"/>
+                  <path d="M8 5v3l2 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+                15 minutos
+              </span>
+              <span class="up-dia-objetivo__detail">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 2C5.239 2 3 4.239 3 7c0 3.866 5 9 5 9s5-5.134 5-9c0-2.761-2.239-5-5-5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                  <circle cx="8" cy="7" r="1.5" fill="currentColor"/>
+                </svg>
+                Em qualquer lugar
+              </span>
+              <span class="up-dia-objetivo__detail">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 3a5 5 0 100 10A5 5 0 008 3z" stroke="currentColor" stroke-width="1.2"/>
+                  <path d="M8 6v2l1.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                </svg>
+                Ritmo livre
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- MISSÃO -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="missao-titulo">
+        <h2 id="missao-titulo" class="up-dia-section-title">Sua missão</h2>
+        <div class="up-dia-missao up-card" data-animate>
+          <p class="up-dia-missao__texto">
+            Escolha um momento do dia — manhã, tarde ou noite — e saia para caminhar
+            por 15 minutos. Pode ser no quarteirão de casa, em um parque, no corredor
+            do trabalho ou em qualquer lugar que você consiga dar passos.
+          </p>
+          <p class="up-dia-missao__texto">
+            Não existe jeito certo. Existe só o jeito que funciona para você agora.
+          </p>
+          <aside class="up-dia-missao__dica" aria-label="Dica para a missão">
+            <span class="up-dia-missao__dica-icon" aria-hidden="true">💡</span>
+            <p class="up-dia-missao__dica-texto">
+              Se 15 minutos parecer demais hoje, comece com 5. O que importa é dar o primeiro passo.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- CHECKLIST -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="checklist-titulo">
+        <h2 id="checklist-titulo" class="up-dia-section-title">Checklist</h2>
+        <div
+          class="up-dia-checklist up-card"
+          data-animate
+          role="group"
+          aria-label="Checklist do Dia 1"
+        >
+
+          <label class="up-checklist-item" for="dia01-check1">
+            <input
+              class="up-checklist-item__input sr-only"
+              type="checkbox"
+              id="dia01-check1"
+              data-day="1"
+              data-check="1"
+            />
+            <span class="up-checklist-item__box" aria-hidden="true">
+              <svg class="up-checklist-item__check" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12" stroke-dashoffset="12"/>
+              </svg>
+            </span>
+            <span class="up-checklist-item__label">Separei um horário para a caminhada de hoje</span>
+          </label>
+
+          <label class="up-checklist-item" for="dia01-check2">
+            <input
+              class="up-checklist-item__input sr-only"
+              type="checkbox"
+              id="dia01-check2"
+              data-day="1"
+              data-check="2"
+            />
+            <span class="up-checklist-item__box" aria-hidden="true">
+              <svg class="up-checklist-item__check" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12" stroke-dashoffset="12"/>
+              </svg>
+            </span>
+            <span class="up-checklist-item__label">Completei os 15 minutos de caminhada</span>
+          </label>
+
+          <label class="up-checklist-item" for="dia01-check3">
+            <input
+              class="up-checklist-item__input sr-only"
+              type="checkbox"
+              id="dia01-check3"
+              data-day="1"
+              data-check="3"
+            />
+            <span class="up-checklist-item__box" aria-hidden="true">
+              <svg class="up-checklist-item__check" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12" stroke-dashoffset="12"/>
+              </svg>
+            </span>
+            <span class="up-checklist-item__label">Tomei água suficiente durante o dia</span>
+          </label>
+
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- EXPLICAÇÃO CIENTÍFICA -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="ciencia-titulo">
+        <h2 id="ciencia-titulo" class="up-dia-section-title">Por que funciona</h2>
+        <article class="up-dia-ciencia up-card" data-animate>
+          <header class="up-dia-ciencia__header">
+            <span class="up-badge">Ciência</span>
+            <h3 class="up-dia-ciencia__titulo">O que acontece no seu corpo quando você caminha</h3>
+          </header>
+          <div class="up-dia-ciencia__corpo">
+            <p>
+              Nos primeiros minutos de caminhada, seu coração acelera levemente, bombeando mais sangue
+              para os músculos e para o cérebro. A pressão arterial se estabiliza e o organismo
+              começa a liberar <strong>endorfinas</strong> — neurotransmissores ligados ao bem-estar
+              e à redução da percepção de dor.
+            </p>
+            <p>
+              Segundo o <strong>American College of Sports Medicine</strong>, apenas 150 minutos
+              semanais de atividade moderada — o equivalente a 15 minutos por dia, 10 vezes por semana —
+              reduzem o risco de doenças cardiovasculares em até 35% e melhoram o humor de forma
+              mensurável em 2 a 4 semanas.
+            </p>
+            <p>
+              A caminhada também ativa o <strong>BDNF</strong> (Fator Neurotrófico Derivado do Cérebro),
+              uma proteína que favorece a criação de novas conexões neurais — literalmente tornando
+              seu cérebro mais eficiente a cada passo.
+            </p>
+          </div>
+          <footer class="up-dia-ciencia__fonte">
+            <p>Fontes: American College of Sports Medicine (ACSM) · OMS — Diretrizes de Atividade Física 2020</p>
+          </footer>
+        </article>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- CURIOSIDADE -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="curiosidade-titulo">
+        <h2 id="curiosidade-titulo" class="up-dia-section-title">Curiosidade do dia</h2>
+        <div class="up-dia-curiosidade up-card" data-animate>
+          <span class="up-dia-curiosidade__icon" aria-hidden="true">🧠</span>
+          <p class="up-dia-curiosidade__texto">
+            Uma pesquisa da Universidade de Stanford mostrou que caminhar aumenta a criatividade
+            em até <strong>81%</strong> — e o efeito persiste por alguns minutos mesmo após você
+            parar de andar. Seu próximo problema pode ser resolvido durante uma caminhada.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- RECEITA -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="receita-titulo">
+        <h2 id="receita-titulo" class="up-dia-section-title">Receita do dia</h2>
+        <article class="up-dia-recipe up-card" data-animate aria-label="Vitamina verde energizante">
+          <header class="up-dia-recipe__header">
+            <div>
+              <span class="up-badge up-badge--sm">Anti-inflamatória · 5 min</span>
+              <h3 class="up-dia-recipe__title">Vitamina verde energizante</h3>
+            </div>
+            <button
+              type="button"
+              class="up-dia-recipe__fav"
+              id="diaRecipeFav"
+              aria-label="Adicionar aos favoritos"
+              aria-pressed="false"
+            >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M10 17s-7-4.5-7-9a4 4 0 018 0 4 4 0 018 0c0 4.5-7 9-7 9z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </header>
+
+          <p class="up-dia-recipe__desc">
+            Espinafre, banana, gengibre e água de coco. Pronto em 5 minutos, rico em
+            potássio e magnésio — minerais essenciais para a contração muscular e a
+            produção de energia celular.
+          </p>
+
+          <div class="up-dia-recipe__grid">
+            <div class="up-dia-recipe__ingredientes">
+              <h4 class="up-dia-recipe__sub">Ingredientes</h4>
+              <ul aria-label="Ingredientes da vitamina verde">
+                <li>1 xícara de espinafre fresco</li>
+                <li>1 banana madura (pode ser congelada)</li>
+                <li>1 colher de chá de gengibre fresco ralado</li>
+                <li>200 ml de água de coco</li>
+                <li>Gelo a gosto (opcional)</li>
+              </ul>
+            </div>
+            <div class="up-dia-recipe__preparo">
+              <h4 class="up-dia-recipe__sub">Modo de preparo</h4>
+              <ol aria-label="Modo de preparo">
+                <li>Lave bem as folhas de espinafre.</li>
+                <li>Coloque todos os ingredientes no liquidificador.</li>
+                <li>Bata por 60 segundos até ficar homogêneo.</li>
+                <li>Sirva imediatamente.</li>
+              </ol>
+            </div>
+          </div>
+
+          <footer class="up-dia-recipe__footer">
+            <div class="up-dia-recipe__nutrição" aria-label="Benefícios nutricionais">
+              <span class="up-recipe__tag">Potássio</span>
+              <span class="up-recipe__tag">Magnésio</span>
+              <span class="up-recipe__tag">Anti-inflamatória</span>
+            </div>
+          </footer>
+        </article>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- DIÁRIO -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="diario-titulo">
+        <h2 id="diario-titulo" class="up-dia-section-title">Diário do Dia 1</h2>
+        <div class="up-dia-diary up-card" data-animate>
+
+          <div class="up-dia-diary__humor" role="group" aria-label="Como você se sentiu hoje?">
+            <p class="up-dia-diary__label">Como você se sentiu após a missão?</p>
+            <div class="up-dia-diary__emojis" id="diaDiaryEmojis">
+              <button type="button" class="up-diary-emoji" data-humor="otimo"   aria-label="Ótimo"   aria-pressed="false">😊</button>
+              <button type="button" class="up-diary-emoji" data-humor="bem"     aria-label="Bem"     aria-pressed="false">🙂</button>
+              <button type="button" class="up-diary-emoji" data-humor="neutro"  aria-label="Neutro"  aria-pressed="false">😐</button>
+              <button type="button" class="up-diary-emoji" data-humor="cansado" aria-label="Cansado" aria-pressed="false">😔</button>
+            </div>
+          </div>
+
+          <div class="up-dia-diary__field">
+            <label class="up-dia-diary__field-label" for="diaDiaryText">
+              O que você percebeu durante ou depois da caminhada?
+            </label>
+            <textarea
+              class="up-dash-diary__textarea"
+              id="diaDiaryText"
+              name="diaDiaryText"
+              rows="4"
+              placeholder="Escreva livremente. Não precisa ser bonito. Só precisa ser verdadeiro."
+              aria-describedby="diaDiaryHint"
+            ></textarea>
+            <p class="up-dash-diary__hint" id="diaDiaryHint">
+              Suas reflexões ficam salvas no seu dispositivo. Só você tem acesso.
+            </p>
+          </div>
+
+          <footer class="up-dia-diary__footer">
+            <button
+              type="button"
+              class="up-button up-button--primary up-button--md"
+              id="diaDiarySave"
+              aria-label="Salvar reflexão do Dia 1"
+            >
+              Salvar reflexão
+            </button>
+            <span
+              class="up-dash-diary__saved-label"
+              id="diaDiarySavedLabel"
+              aria-live="polite"
+              hidden
+            >Salvo ✓</span>
+          </footer>
+
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- MENSAGEM FINAL -->
+      <!-- ========================================= -->
+      <section class="up-dia-final" aria-labelledby="final-titulo">
+        <div class="up-dia-final__inner up-card">
+          <span class="up-dia-final__icon" aria-hidden="true">🌱</span>
+          <h2 id="final-titulo" class="up-dia-final__title">
+            Você fez o mais difícil.
+          </h2>
+          <p class="up-dia-final__text">
+            Começar é sempre o passo mais difícil — e você deu. Amanhã, o Dia 2 estará esperando
+            por você com uma nova missão igualmente simples. Um dia de cada vez.
+          </p>
+          <div class="up-dia-final__actions">
+            <button
+              type="button"
+              class="up-button up-button--primary up-button--lg"
+              id="diaConcluirBtn"
+              aria-label="Marcar Dia 1 como concluído"
+            >
+              Concluir Dia 1
+            </button>
+            <a
+              href="dashboard.html"
+              class="up-button up-button--ghost up-button--lg"
+              aria-label="Voltar ao painel"
+            >
+              Voltar ao painel
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- /container -->
+  </main>
+
+  <!-- ========================================= -->
+  <!-- JS -->
+  <!-- ========================================= -->
+  <script src="../js/utils.js" defer></script>
+  <script src="../js/storage.js" defer></script>
+  <script src="../js/animation.js" defer></script>
+  <script src="../js/progress.js" defer></script>
+  <script src="../js/ui.js" defer></script>
+  <script src="dia01.js" defer></script>
+
+</body>
+</html>
