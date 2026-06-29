@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projeto Recomeço — Um plano de 21 dias para sair do sedentarismo sem precisar de academia. Simples, progressivo e baseado em evidências." />
+  <meta name="theme-color" content="#F7F5F2" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projeto Recomeço — Um Plano. Vinte e Um Dias. Zero Academia." />
+  <meta property="og:description" content="Saia do sedentarismo com um plano gentil, progressivo e baseado em evidências. Sem culpa. Sem academia. Sem complicação." />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+
+  <title>Projeto Recomeço — Um Plano. Vinte e Um Dias. Zero Academia.</title>
+
+  <!-- ========================================= -->
+  <!-- FONTS -->
+  <!-- ========================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ========================================= -->
+  <!-- CSS -->
+  <!-- ========================================= -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================= -->
+  <!-- NAVBAR -->
+  <!-- ========================================= -->
+  <header class="up-navbar" role="banner">
+    <nav class="up-navbar__inner container" aria-label="Navegação principal">
+      <a href="#inicio" class="up-navbar__logo" aria-label="Projeto Recomeço — início">
+        <span class="up-navbar__logo-text">Recomeço</span>
+      </a>
+      <a href="#oferta" class="up-button up-button--primary up-button--sm" aria-label="Começar agora por R$ 49,90">
+        Começar agora
+      </a>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <!-- ========================================= -->
+    <!-- HERO -->
+    <!-- ========================================= -->
+    <section id="inicio" class="up-hero" aria-labelledby="hero-titulo">
+      <div class="up-hero__inner container">
+
+        <div class="up-hero__badge up-badge" aria-label="Categoria do produto">
+          Programa de 21 dias
+        </div>
+
+        <h1 id="hero-titulo" class="up-hero__title">
+          Um Plano.<br />
+          <em>Vinte e Um Dias.</em><br />
+          Zero Academia.
+        </h1>
+
+        <p class="up-hero__subtitle">
+          Saia do sedentarismo com um método gentil, progressivo e baseado em evidências científicas.
+          Sem culpa. Sem pressa. Sem complicação.
+        </p>
+
+        <div class="up-hero__actions">
+          <a href="#diagnostico" class="up-button up-button--primary up-button--lg" aria-label="Fazer diagnóstico gratuito">
+            Fazer meu diagnóstico gratuito
+          </a>
+          <p class="up-hero__actions-note">
+            Leva menos de 2 minutos
+          </p>
+        </div>
+
+        <figure class="up-hero__visual" aria-hidden="true">
+          <div class="up-hero__days-strip" role="presentation">
+            <span class="up-hero__day up-hero__day--done" aria-hidden="true">Dia 1</span>
+            <span class="up-hero__day up-hero__day--done" aria-hidden="true">Dia 2</span>
+            <span class="up-hero__day up-hero__day--done" aria-hidden="true">Dia 3</span>
+            <span class="up-hero__day up-hero__day--active" aria-hidden="true">Dia 4</span>
+            <span class="up-hero__day" aria-hidden="true">Dia 5</span>
+            <span class="up-hero__day" aria-hidden="true">Dia 6</span>
+            <span class="up-hero__day" aria-hidden="true">Dia 7</span>
+          </div>
+          <figcaption class="up-hero__visual-caption">
+            Cada dia tem uma missão pequena e possível.
+          </figcaption>
+        </figure>
+
+        <div class="up-hero__proof" aria-label="Indicadores do programa">
+          <div class="up-hero__proof-item">
+            <strong class="up-hero__proof-number">21</strong>
+            <span class="up-hero__proof-label">dias de programa</span>
+          </div>
+          <div class="up-hero__proof-divider" aria-hidden="true"></div>
+          <div class="up-hero__proof-item">
+            <strong class="up-hero__proof-number">0</strong>
+            <span class="up-hero__proof-label">equipamentos necessários</span>
+          </div>
+          <div class="up-hero__proof-divider" aria-hidden="true"></div>
+          <div class="up-hero__proof-item">
+            <strong class="up-hero__proof-number">15min</strong>
+            <span class="up-hero__proof-label">por dia no início</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- DIAGNÓSTICO -->
+    <!-- ========================================= -->
+    <section id="diagnostico" class="up-quiz-section" aria-labelledby="quiz-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">Diagnóstico gratuito</div>
+        <h2 id="quiz-titulo" class="up-section-title">
+          Em qual momento você está agora?
+        </h2>
+        <p class="up-section-subtitle">
+          Escolha a frase que melhor descreve sua situação atual. Sem julgamentos.
+        </p>
+
+        <div class="up-quiz" id="quiz" role="form" aria-label="Diagnóstico de sedentarismo">
+          <fieldset class="up-quiz__fieldset">
+            <legend class="sr-only">Selecione sua situação atual</legend>
+
+            <label class="up-quiz__option" for="quiz-a">
+              <input
+                class="up-quiz__input sr-only"
+                type="radio"
+                name="situacao"
+                id="quiz-a"
+                value="a"
+                aria-describedby="quiz-a-desc"
+              />
+              <span class="up-quiz__option-inner">
+                <span class="up-quiz__option-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M8 12s1.5 2 4 2 4-2 4-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="9" cy="10" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="10" r="1" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span class="up-quiz__option-content">
+                  <strong class="up-quiz__option-title">Estou bem, mas quero melhorar</strong>
+                  <span id="quiz-a-desc" class="up-quiz__option-desc">Me mexo às vezes, mas sinto que posso criar um hábito mais consistente.</span>
+                </span>
+              </span>
+            </label>
+
+            <label class="up-quiz__option" for="quiz-b">
+              <input
+                class="up-quiz__input sr-only"
+                type="radio"
+                name="situacao"
+                id="quiz-b"
+                value="b"
+                aria-describedby="quiz-b-desc"
+              />
+              <span class="up-quiz__option-inner">
+                <span class="up-quiz__option-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M9 15h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="9" cy="10" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="10" r="1" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span class="up-quiz__option-content">
+                  <strong class="up-quiz__option-title">Faz tempo que não me movimento</strong>
+                  <span id="quiz-b-desc" class="up-quiz__option-desc">Meu dia é basicamente sentado. Sinto o corpo pesado e a energia baixa.</span>
+                </span>
+              </span>
+            </label>
+
+            <label class="up-quiz__option" for="quiz-c">
+              <input
+                class="up-quiz__input sr-only"
+                type="radio"
+                name="situacao"
+                id="quiz-c"
+                value="c"
+                aria-describedby="quiz-c-desc"
+              />
+              <span class="up-quiz__option-inner">
+                <span class="up-quiz__option-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M8 15s1.5-2 4-2 4 2 4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="9" cy="10" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="10" r="1" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span class="up-quiz__option-content">
+                  <strong class="up-quiz__option-title">Já tentei começar e desisti</strong>
+                  <span id="quiz-c-desc" class="up-quiz__option-desc">Comecei algumas vezes, mas sempre paro. Parece que não é pra mim.</span>
+                </span>
+              </span>
+            </label>
+
+            <label class="up-quiz__option" for="quiz-d">
+              <input
+                class="up-quiz__input sr-only"
+                type="radio"
+                name="situacao"
+                id="quiz-d"
+                value="d"
+                aria-describedby="quiz-d-desc"
+              />
+              <span class="up-quiz__option-inner">
+                <span class="up-quiz__option-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M8 15s1.5-2 4-2 4 2 4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M9 9l1 1M15 9l-1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <span class="up-quiz__option-content">
+                  <strong class="up-quiz__option-title">Não sei nem por onde começar</strong>
+                  <span id="quiz-d-desc" class="up-quiz__option-desc">Quero mudar, mas a quantidade de informação me paralisa. Preciso de um guia claro.</span>
+                </span>
+              </span>
+            </label>
+
+          </fieldset>
+
+          <button
+            type="button"
+            class="up-button up-button--primary up-button--lg up-quiz__submit"
+            id="quizSubmit"
+            aria-label="Ver meu resultado personalizado"
+            disabled
+          >
+            Ver meu resultado
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- RESULTADO DO QUIZ -->
+    <!-- ========================================= -->
+    <section id="resultado" class="up-resultado" aria-labelledby="resultado-titulo" aria-live="polite" hidden>
+      <div class="container">
+
+        <div class="up-resultado__card up-card">
+          <div class="up-resultado__icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="var(--color-accent)" stroke-width="2"/>
+              <path d="M16 24l6 6 10-12" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h2 id="resultado-titulo" class="up-resultado__title"></h2>
+          <p class="up-resultado__text"></p>
+          <a href="#oferta" class="up-button up-button--primary up-button--lg">
+            Quero meu plano de 21 dias
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- PROBLEMA -->
+    <!-- ========================================= -->
+    <section id="problema" class="up-problema" aria-labelledby="problema-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">O que está acontecendo</div>
+        <h2 id="problema-titulo" class="up-section-title">
+          Não é falta de força de vontade.<br />
+          <em>É falta de um método certo.</em>
+        </h2>
+
+        <div class="up-problema__grid">
+
+          <article class="up-problema__item up-card">
+            <figure class="up-problema__item-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 4v8M16 20v8M4 16h8M20 16h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </figure>
+            <h3 class="up-problema__item-title">Começo intenso demais</h3>
+            <p class="up-problema__item-text">
+              A maioria das pessoas começa com tudo — e para em 3 dias. O corpo não está preparado
+              e a motivação cai junto com a dor muscular.
+            </p>
+          </article>
+
+          <article class="up-problema__item up-card">
+            <figure class="up-problema__item-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="8" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 13h24" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 4v4M22 4v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M9 20h4M9 23h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="23" cy="21.5" r="3.5" stroke="var(--color-accent)" stroke-width="1.5"/>
+                <path d="M21.5 21.5l1 1 2-2" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </figure>
+            <h3 class="up-problema__item-title">Sem estrutura diária</h3>
+            <p class="up-problema__item-text">
+              Sem saber o que fazer em cada dia, qualquer obstáculo vira desculpa. A falta de um plano
+              claro é o maior inimigo do hábito.
+            </p>
+          </article>
+
+          <article class="up-problema__item up-card">
+            <figure class="up-problema__item-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 6C10.477 6 6 10.477 6 16s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M16 10v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </figure>
+            <h3 class="up-problema__item-title">Informação demais</h3>
+            <p class="up-problema__item-text">
+              Internet, redes sociais, influenciadores — todo mundo diz uma coisa diferente. Essa
+              sobrecarga gera paralisia e confusão em vez de ação.
+            </p>
+          </article>
+
+          <article class="up-problema__item up-card">
+            <figure class="up-problema__item-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="16" cy="11" r="5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 28h24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </figure>
+            <h3 class="up-problema__item-title">Culpa e comparação</h3>
+            <p class="up-problema__item-text">
+              Comparar-se com quem já treina há anos é o caminho mais rápido para a desmotivação.
+              Cada corpo tem seu próprio ritmo de adaptação.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="up-problema__dados" aria-label="Dados sobre sedentarismo no Brasil">
+          <p class="up-problema__dados-text">
+            Segundo o <strong>Ministério da Saúde</strong>, mais de <strong>47% dos brasileiros</strong> são
+            considerados insuficientemente ativos — e a maioria já tentou mudar ao menos uma vez.
+          </p>
+          <p class="up-problema__dados-source">
+            Fonte: Vigitel Brasil 2023 — Ministério da Saúde
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- MÉTODO -->
+    <!-- ========================================= -->
+    <section id="metodo" class="up-metodo" aria-labelledby="metodo-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">Como funciona</div>
+        <h2 id="metodo-titulo" class="up-section-title">
+          O Método Recomeço
+        </h2>
+        <p class="up-section-subtitle">
+          Baseado em três pilares validados pela ciência do comportamento e pela fisiologia do exercício.
+        </p>
+
+        <ol class="up-metodo__pilares" aria-label="Os três pilares do Método Recomeço">
+
+          <li class="up-metodo__pilar up-card">
+            <div class="up-metodo__pilar-number" aria-hidden="true">01</div>
+            <div class="up-metodo__pilar-content">
+              <h3 class="up-metodo__pilar-title">Progressão gradual</h3>
+              <p class="up-metodo__pilar-text">
+                O programa começa com 15 minutos por dia e aumenta com leveza ao longo das semanas.
+                Pesquisas do <strong>American College of Sports Medicine</strong> mostram que a progressão
+                gradual reduz o risco de abandono em até 70%.
+              </p>
+              <div class="up-metodo__pilar-progress" aria-label="Progressão ao longo das semanas" role="img">
+                <div class="up-metodo__pilar-bar">
+                  <span class="up-metodo__pilar-bar-fill" style="width: 30%;" aria-hidden="true"></span>
+                  <span class="up-metodo__pilar-bar-label">Semana 1 — 15 min/dia</span>
+                </div>
+                <div class="up-metodo__pilar-bar">
+                  <span class="up-metodo__pilar-bar-fill" style="width: 55%;" aria-hidden="true"></span>
+                  <span class="up-metodo__pilar-bar-label">Semana 2 — 20 min/dia</span>
+                </div>
+                <div class="up-metodo__pilar-bar">
+                  <span class="up-metodo__pilar-bar-fill" style="width: 80%;" aria-hidden="true"></span>
+                  <span class="up-metodo__pilar-bar-label">Semana 3 — 30 min/dia</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="up-metodo__pilar up-card">
+            <div class="up-metodo__pilar-number" aria-hidden="true">02</div>
+            <div class="up-metodo__pilar-content">
+              <h3 class="up-metodo__pilar-title">Missão diária única</h3>
+              <p class="up-metodo__pilar-text">
+                Cada dia tem apenas <strong>uma missão principal</strong>. Sem listas intermináveis.
+                Sem decisões desnecessárias. O foco em uma ação por vez é o que transforma intenção em hábito.
+              </p>
+              <div class="up-metodo__missao-exemplo up-card up-card--inner" aria-label="Exemplo de missão diária">
+                <span class="up-badge up-badge--sm">Exemplo — Dia 4</span>
+                <p class="up-metodo__missao-texto">
+                  Caminhe por 15 minutos no ritmo que for confortável para você.
+                  Não precisa ser rápido. Só precisa acontecer.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="up-metodo__pilar up-card">
+            <div class="up-metodo__pilar-number" aria-hidden="true">03</div>
+            <div class="up-metodo__pilar-content">
+              <h3 class="up-metodo__pilar-title">Reflexão e nutrição leve</h3>
+              <p class="up-metodo__pilar-text">
+                Cada dia inclui um breve diário para registrar como você se sentiu e uma receita
+                anti-inflamatória simples. Cuidar do corpo vai além do movimento — inclui sono,
+                alimentação e saúde mental.
+              </p>
+              <div class="up-metodo__pilares-tags" aria-label="Componentes diários do programa">
+                <span class="up-badge">Movimento</span>
+                <span class="up-badge">Nutrição</span>
+                <span class="up-badge">Diário</span>
+                <span class="up-badge">Ciência</span>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- LINHA DO TEMPO -->
+    <!-- ========================================= -->
+    <section id="linha-do-tempo" class="up-timeline" aria-labelledby="timeline-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">Semana a semana</div>
+        <h2 id="timeline-titulo" class="up-section-title">
+          O que acontece com seu corpo<br />
+          <em>nos 21 dias</em>
+        </h2>
+        <p class="up-section-subtitle">
+          Cada semana tem um foco diferente. A progressão é intencional — e você vai sentir a diferença.
+        </p>
+
+        <ol class="up-timeline__list" aria-label="Progresso ao longo dos 21 dias">
+
+          <li class="up-timeline__item">
+            <div class="up-timeline__marker" aria-hidden="true">
+              <span class="up-timeline__marker-dot"></span>
+              <span class="up-timeline__marker-line"></span>
+            </div>
+            <article class="up-timeline__content up-card">
+              <header class="up-timeline__content-header">
+                <span class="up-badge">Dias 1–7</span>
+                <h3 class="up-timeline__content-title">Semana da Ativação</h3>
+              </header>
+              <p class="up-timeline__content-text">
+                O corpo começa a se lembrar que foi feito para se mover. Missões curtas,
+                movimentos simples e o início da construção do hábito. Você vai sentir
+                menos rigidez e mais disposição ao acordar.
+              </p>
+              <ul class="up-timeline__content-markers" aria-label="Resultados esperados na semana 1">
+                <li>Melhora na qualidade do sono</li>
+                <li>Redução da rigidez matinal</li>
+                <li>Primeiros sinais de mais energia</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="up-timeline__item">
+            <div class="up-timeline__marker" aria-hidden="true">
+              <span class="up-timeline__marker-dot up-timeline__marker-dot--mid"></span>
+              <span class="up-timeline__marker-line"></span>
+            </div>
+            <article class="up-timeline__content up-card">
+              <header class="up-timeline__content-header">
+                <span class="up-badge">Dias 8–14</span>
+                <h3 class="up-timeline__content-title">Semana da Consistência</h3>
+              </header>
+              <p class="up-timeline__content-text">
+                O hábito começa a se instalar. O corpo já espera o movimento diário.
+                A intensidade aumenta com leveza e você percebe que está ficando mais fácil
+                do que parecia no começo.
+              </p>
+              <ul class="up-timeline__content-markers" aria-label="Resultados esperados na semana 2">
+                <li>Menor esforço percebido nos movimentos</li>
+                <li>Melhora no humor e foco</li>
+                <li>Hábito começando a se automatizar</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="up-timeline__item up-timeline__item--last">
+            <div class="up-timeline__marker" aria-hidden="true">
+              <span class="up-timeline__marker-dot up-timeline__marker-dot--final"></span>
+            </div>
+            <article class="up-timeline__content up-card">
+              <header class="up-timeline__content-header">
+                <span class="up-badge">Dias 15–21</span>
+                <h3 class="up-timeline__content-title">Semana da Transformação</h3>
+              </header>
+              <p class="up-timeline__content-text">
+                Aqui você percebe que mudou. O movimento já faz parte do seu dia.
+                Pesquisas indicam que 21 dias de prática consistente são suficientes
+                para criar os primeiros ciclos neurológicos de um novo hábito.
+              </p>
+              <ul class="up-timeline__content-markers" aria-label="Resultados esperados na semana 3">
+                <li>Sensação real de conquista</li>
+                <li>Corpo mais leve e ativo</li>
+                <li>Hábito consolidado como rotina</li>
+              </ul>
+              <p class="up-timeline__content-source">
+                Referência: Lally et al. (2010) — European Journal of Social Psychology
+              </p>
+            </article>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- BENEFÍCIOS -->
+    <!-- ========================================= -->
+    <section id="beneficios" class="up-beneficios" aria-labelledby="beneficios-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">O que você ganha</div>
+        <h2 id="beneficios-titulo" class="up-section-title">
+          Mais do que movimento.<br />
+          <em>Uma vida diferente.</em>
+        </h2>
+
+        <div class="up-beneficios__grid">
+
+          <article class="up-beneficio up-card">
+            <figure class="up-beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12S24.627 6 18 6z" stroke="var(--color-accent)" stroke-width="1.5"/>
+                <path d="M13 18l3.5 3.5L23 14" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </figure>
+            <h3 class="up-beneficio__title">Mais energia no dia a dia</h3>
+            <p class="up-beneficio__text">
+              Atividade física regular aumenta a produção mitocondrial nas células musculares,
+              gerando mais energia disponível — mesmo nos dias que você não se exercitar.
+            </p>
+          </article>
+
+          <article class="up-beneficio up-card">
+            <figure class="up-beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 8v4M18 24v4M8 18H4M32 18h-4" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="18" cy="18" r="6" stroke="var(--color-accent)" stroke-width="1.5"/>
+                <path d="M10.1 10.1l2.83 2.83M23.07 23.07l2.83 2.83M10.1 25.9l2.83-2.83M23.07 12.93l2.83-2.83" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </figure>
+            <h3 class="up-beneficio__title">Sono mais profundo</h3>
+            <p class="up-beneficio__text">
+              A OMS confirma: praticar atividade física moderada regularmente melhora a qualidade
+              do sono, reduz o tempo para adormecer e aumenta a fase de sono profundo (REM).
+            </p>
+          </article>
+
+          <article class="up-beneficio up-card">
+            <figure class="up-beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 10c-4.418 0-8 2.686-8 6 0 2.21 1.5 4.16 3.75 5.25L12 28h12l-1.75-6.75C24.5 20.16 26 18.21 26 16c0-3.314-3.582-6-8-6z" stroke="var(--color-accent)" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </figure>
+            <h3 class="up-beneficio__title">Humor e clareza mental</h3>
+            <p class="up-beneficio__text">
+              O movimento físico libera endorfinas, serotonina e BDNF — substâncias que melhoram
+              o humor, reduzem a ansiedade e aumentam a nitidez do pensamento.
+            </p>
+          </article>
+
+          <article class="up-beneficio up-card">
+            <figure class="up-beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6l2.09 6.26H27l-5.45 3.96 2.09 6.26L18 18.52l-5.64 3.96 2.09-6.26L9 12.26h6.91z" stroke="var(--color-accent)" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M18 24v6" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </figure>
+            <h3 class="up-beneficio__title">Autoconfiança real</h3>
+            <p class="up-beneficio__text">
+              Cumprir uma missão por dia — por 21 dias seguidos — constrói uma identidade nova:
+              a de alguém que consegue. Isso vai muito além do corpo.
+            </p>
+          </article>
+
+          <article class="up-beneficio up-card">
+            <figure class="up-beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 30c-6.627 0-12-5.373-12-12S11.373 6 18 6" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M18 6c6.627 0 12 5.373 12 12" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+                <path d="M18 12v6l4 2" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </figure>
+            <h3 class="up-beneficio__title">Saúde cardiovascular</h3>
+            <p class="up-beneficio__text">
+              A Sociedade Brasileira de Cardiologia recomenda pelo menos 150 minutos semanais de
+              atividade moderada — exatamente o que o Projeto Recomeço oferece na semana 3.
+            </p>
+          </article>
+
+          <article class="up-beneficio up-card">
+            <figure class="up-beneficio__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 26c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="18" cy="13" r="5" stroke="var(--color-accent)" stroke-width="1.5"/>
+              </svg>
+            </figure>
+            <h3 class="up-beneficio__title">Uma nova identidade</h3>
+            <p class="up-beneficio__text">
+              Você deixa de ser alguém que "vai começar" e passa a ser alguém que já começou.
+              Essa mudança de perspectiva é o maior benefício de todos.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ANTES X DEPOIS -->
+    <!-- ========================================= -->
+    <section id="antes-depois" class="up-comparativo" aria-labelledby="comparativo-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">A diferença na prática</div>
+        <h2 id="comparativo-titulo" class="up-section-title">
+          Antes do Recomeço.<br />
+          <em>Depois do Recomeço.</em>
+        </h2>
+
+        <div class="up-comparativo__grid" role="region" aria-label="Comparação antes e depois do programa">
+
+          <div class="up-comparativo__coluna up-comparativo__coluna--antes" aria-label="Antes do programa">
+            <header class="up-comparativo__header">
+              <span class="up-comparativo__label" aria-hidden="true">Antes</span>
+            </header>
+            <ul class="up-comparativo__lista" aria-label="Situação antes do programa">
+              <li class="up-comparativo__item up-comparativo__item--negativo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 13.5l9-9M13.5 13.5l-9-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                Acordar cansado mesmo depois de dormir
+              </li>
+              <li class="up-comparativo__item up-comparativo__item--negativo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 13.5l9-9M13.5 13.5l-9-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                Corpo pesado e rígido ao longo do dia
+              </li>
+              <li class="up-comparativo__item up-comparativo__item--negativo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 13.5l9-9M13.5 13.5l-9-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                Culpa por não se exercitar
+              </li>
+              <li class="up-comparativo__item up-comparativo__item--negativo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 13.5l9-9M13.5 13.5l-9-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                Foco e memória mais fracos
+              </li>
+              <li class="up-comparativo__item up-comparativo__item--negativo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 13.5l9-9M13.5 13.5l-9-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                Sensação constante de "deveria fazer algo"
+              </li>
+            </ul>
+          </div>
+
+          <div class="up-comparativo__divisor" aria-hidden="true">
+            <span class="up-comparativo__divisor-icon">→</span>
+          </div>
+
+          <div class="up-comparativo__coluna up-comparativo__coluna--depois" aria-label="Depois do programa">
+            <header class="up-comparativo__header">
+              <span class="up-comparativo__label" aria-hidden="true">Depois</span>
+            </header>
+            <ul class="up-comparativo__lista" aria-label="Situação depois do programa">
+              <li class="up-comparativo__item up-comparativo__item--positivo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9l4 4 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Acordar com energia real para o dia
+              </li>
+              <li class="up-comparativo__item up-comparativo__item--positivo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9l4 4 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Corpo mais leve, ágil e sem dores
+              </li>
+              <li class="up-comparativo__item up-comparativo__item--positivo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9l4 4 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Orgulho genuíno de si mesmo
+              </li>
+              <li class="up-comparativo__item up-comparativo__item--positivo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9l4 4 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Mais clareza, foco e memória
+              </li>
+              <li class="up-comparativo__item up-comparativo__item--positivo">
+                <span class="up-comparativo__item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.5 9l4 4 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                A sensação de ser alguém que age
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- TRANSFORMAÇÃO -->
+    <!-- ========================================= -->
+    <section id="transformacao" class="up-transformacao" aria-labelledby="transformacao-titulo">
+      <div class="container">
+
+        <blockquote class="up-transformacao__quote">
+          <p class="up-transformacao__quote-text">
+            "Você não precisa estar em forma para começar.<br />
+            <em>Você precisa começar para ficar em forma."</em>
+          </p>
+          <footer class="up-transformacao__quote-footer">
+            <cite class="up-transformacao__quote-cite">Princípio do Projeto Recomeço</cite>
+          </footer>
+        </blockquote>
+
+        <div class="up-transformacao__numeros" aria-label="Resultados do programa em números">
+          <div class="up-transformacao__numero-item">
+            <strong class="up-transformacao__numero">21</strong>
+            <span class="up-transformacao__numero-label">dias de programa completo</span>
+          </div>
+          <div class="up-transformacao__numero-item">
+            <strong class="up-transformacao__numero">1</strong>
+            <span class="up-transformacao__numero-label">missão por dia — sem sobrecarga</span>
+          </div>
+          <div class="up-transformacao__numero-item">
+            <strong class="up-transformacao__numero">63</strong>
+            <span class="up-transformacao__numero-label">receitas e curiosidades científicas</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- RECEITAS -->
+    <!-- ========================================= -->
+    <section id="receitas" class="up-receitas-preview" aria-labelledby="receitas-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">Nutrição incluída</div>
+        <h2 id="receitas-titulo" class="up-section-title">
+          Uma receita simples<br />
+          <em>para cada dia.</em>
+        </h2>
+        <p class="up-section-subtitle">
+          Anti-inflamatórias, acessíveis e rápidas de preparar.
+          Não é dieta — é suporte para o seu corpo se recuperar melhor.
+        </p>
+
+        <div class="up-receitas-preview__grid">
+
+          <article class="up-recipe up-card" aria-label="Receita do Dia 1">
+            <header class="up-recipe__header">
+              <span class="up-badge up-badge--sm">Dia 1</span>
+              <h3 class="up-recipe__title">Vitamina verde energizante</h3>
+            </header>
+            <p class="up-recipe__desc">
+              Espinafre, banana, gengibre e água de coco. Pronto em 5 minutos,
+              rico em potássio e magnésio — nutrientes essenciais para o músculo em ativação.
+            </p>
+            <footer class="up-recipe__footer">
+              <span class="up-recipe__time">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3l2 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                5 min
+              </span>
+              <span class="up-recipe__tag">Anti-inflamatória</span>
+            </footer>
+          </article>
+
+          <article class="up-recipe up-card" aria-label="Receita do Dia 7">
+            <header class="up-recipe__header">
+              <span class="up-badge up-badge--sm">Dia 7</span>
+              <h3 class="up-recipe__title">Bowl de iogurte com aveia e frutas</h3>
+            </header>
+            <p class="up-recipe__desc">
+              Iogurte natural, aveia em flocos, banana e mel. Proteína e carboidrato
+              de qualidade para repor energia após a primeira semana ativa.
+            </p>
+            <footer class="up-recipe__footer">
+              <span class="up-recipe__time">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3l2 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                8 min
+              </span>
+              <span class="up-recipe__tag">Rica em proteína</span>
+            </footer>
+          </article>
+
+          <article class="up-recipe up-card" aria-label="Receita do Dia 14">
+            <header class="up-recipe__header">
+              <span class="up-badge up-badge--sm">Dia 14</span>
+              <h3 class="up-recipe__title">Chá dourado com leite vegetal</h3>
+            </header>
+            <p class="up-recipe__desc">
+              Cúrcuma, canela, gengibre e leite de amêndoas. Poderoso anti-inflamatório
+              natural, ideal para o fim do dia após duas semanas de movimento.
+            </p>
+            <footer class="up-recipe__footer">
+              <span class="up-recipe__time">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3l2 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                6 min
+              </span>
+              <span class="up-recipe__tag">Anti-inflamatória</span>
+            </footer>
+          </article>
+
+        </div>
+
+        <p class="up-receitas-preview__nota">
+          + 18 receitas ao longo dos 21 dias — todas com menos de 10 ingredientes.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CALENDÁRIO -->
+    <!-- ========================================= -->
+    <section id="calendario" class="up-calendario-preview" aria-labelledby="calendario-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">Acompanhamento visual</div>
+        <h2 id="calendario-titulo" class="up-section-title">
+          Veja seu progresso<br />
+          <em>dia a dia.</em>
+        </h2>
+        <p class="up-section-subtitle">
+          O calendário integrado registra cada missão cumprida.
+          Ver a sequência crescer é combustível para continuar.
+        </p>
+
+        <div class="up-calendario-preview__widget up-card" aria-label="Exemplo de calendário do programa">
+          <header class="up-calendario-preview__header">
+            <span class="up-calendario-preview__mes">Seu mês de recomeço</span>
+            <span class="up-badge">21 dias</span>
+          </header>
+          <div class="up-calendario-preview__grid" role="grid" aria-label="Dias do programa">
+            <div class="up-calendario-preview__day-names" role="row" aria-hidden="true">
+              <span role="columnheader">S</span>
+              <span role="columnheader">T</span>
+              <span role="columnheader">Q</span>
+              <span role="columnheader">Q</span>
+              <span role="columnheader">S</span>
+              <span role="columnheader">S</span>
+              <span role="columnheader">D</span>
+            </div>
+            <div class="up-calendario-preview__days" role="row">
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 1 — concluído" aria-pressed="true">1</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 2 — concluído" aria-pressed="true">2</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 3 — concluído" aria-pressed="true">3</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 4 — concluído" aria-pressed="true">4</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 5 — concluído" aria-pressed="true">5</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 6 — concluído" aria-pressed="true">6</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 7 — concluído" aria-pressed="true">7</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 8 — concluído" aria-pressed="true">8</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 9 — concluído" aria-pressed="true">9</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--done" role="gridcell" aria-label="Dia 10 — concluído" aria-pressed="true">10</button>
+              <button class="up-calendario-preview__day up-calendario-preview__day--active" role="gridcell" aria-label="Dia 11 — hoje" aria-current="date">11</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 12 — pendente" aria-pressed="false">12</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 13 — pendente" aria-pressed="false">13</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 14 — pendente" aria-pressed="false">14</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 15 — pendente" aria-pressed="false">15</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 16 — pendente" aria-pressed="false">16</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 17 — pendente" aria-pressed="false">17</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 18 — pendente" aria-pressed="false">18</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 19 — pendente" aria-pressed="false">19</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 20 — pendente" aria-pressed="false">20</button>
+              <button class="up-calendario-preview__day" role="gridcell" aria-label="Dia 21 — pendente" aria-pressed="false">21</button>
+            </div>
+          </div>
+          <div class="up-calendario-preview__legenda" aria-label="Legenda do calendário">
+            <span class="up-calendario-preview__legenda-item">
+              <span class="up-calendario-preview__legenda-dot up-calendario-preview__legenda-dot--done" aria-hidden="true"></span>
+              Missão cumprida
+            </span>
+            <span class="up-calendario-preview__legenda-item">
+              <span class="up-calendario-preview__legenda-dot up-calendario-preview__legenda-dot--active" aria-hidden="true"></span>
+              Hoje
+            </span>
+            <span class="up-calendario-preview__legenda-item">
+              <span class="up-calendario-preview__legenda-dot" aria-hidden="true"></span>
+              Próximos dias
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- DIÁRIO -->
+    <!-- ========================================= -->
+    <section id="diario" class="up-diario-preview" aria-labelledby="diario-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">Reflexão diária</div>
+        <h2 id="diario-titulo" class="up-section-title">
+          Um espaço só seu.<br />
+          <em>Para registrar como você se sentiu.</em>
+        </h2>
+        <p class="up-section-subtitle">
+          Pesquisas mostram que escrever sobre a experiência de exercício aumenta em 40%
+          a chance de manutenção do hábito a longo prazo.
+        </p>
+
+        <div class="up-diario-preview__card up-card" aria-label="Exemplo de entrada no diário — Dia 10">
+          <header class="up-diario-preview__header">
+            <span class="up-badge">Dia 10</span>
+            <time class="up-diario-preview__data" datetime="2024-01-10">10 de janeiro</time>
+          </header>
+
+          <div class="up-diario-preview__perguntas">
+            <div class="up-diario-preview__pergunta">
+              <p class="up-diario-preview__pergunta-label">Como você se sentiu hoje?</p>
+              <div class="up-diario-preview__humor" role="group" aria-label="Avaliação de humor do dia">
+                <span class="up-diario-preview__emoji up-diario-preview__emoji--selected" aria-label="Ótimo" role="img">😊</span>
+                <span class="up-diario-preview__emoji" aria-label="Bem" role="img">🙂</span>
+                <span class="up-diario-preview__emoji" aria-label="Neutro" role="img">😐</span>
+                <span class="up-diario-preview__emoji" aria-label="Cansado" role="img">😔</span>
+              </div>
+            </div>
+
+            <div class="up-diario-preview__pergunta">
+              <p class="up-diario-preview__pergunta-label">O que você notou de diferente no seu corpo?</p>
+              <p class="up-diario-preview__resposta-exemplo">
+                "Acordei sem aquela dor nas costas que estava tendo toda semana. Consegui subir a escada sem ficar sem fôlego."
+              </p>
+            </div>
+          </div>
+
+          <footer class="up-diario-preview__footer">
+            <p class="up-diario-preview__footer-text">
+              Suas respostas ficam salvas e privadas. Só você tem acesso.
+            </p>
+          </footer>
+        </div>
+
+        <p class="up-diario-preview__fonte">
+          Referência: Ullrich & Lutgendorf (2002) — Annals of Behavioral Medicine
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- GARANTIA -->
+    <!-- ========================================= -->
+    <section id="garantia" class="up-garantia" aria-labelledby="garantia-titulo">
+      <div class="container">
+
+        <div class="up-garantia__card up-card">
+          <figure class="up-garantia__icon" aria-hidden="true">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 8L12 18v14c0 11.046 8.954 20 20 20s20-8.954 20-20V18L32 8z" stroke="var(--color-accent)" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M22 32l7 7 13-13" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
+
+          <div class="up-garantia__content">
+            <div class="up-section-label" aria-hidden="true">Sem risco</div>
+            <h2 id="garantia-titulo" class="up-garantia__title">
+              Garantia de 7 dias
+            </h2>
+            <p class="up-garantia__text">
+              Se em até 7 dias após a compra você sentir que o Projeto Recomeço não é para você,
+              basta enviar um e-mail e devolvemos 100% do seu dinheiro — sem perguntas,
+              sem burocracia, sem julgamento.
+            </p>
+            <p class="up-garantia__text">
+              Acreditamos que você vai sentir a diferença já na primeira semana.
+              Mas queremos que você entre com tranquilidade total.
+            </p>
+            <div class="up-garantia__destaque" aria-label="Resumo da garantia">
+              <span class="up-garantia__destaque-item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9l4 4 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                7 dias de garantia total
+              </span>
+              <span class="up-garantia__destaque-item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9l4 4 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Reembolso 100% sem perguntas
+              </span>
+              <span class="up-garantia__destaque-item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9l4 4 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Acesso imediato após a compra
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- FAQ -->
+    <!-- ========================================= -->
+    <section id="faq" class="up-faq" aria-labelledby="faq-titulo">
+      <div class="container">
+
+        <div class="up-section-label" aria-hidden="true">Dúvidas frequentes</div>
+        <h2 id="faq-titulo" class="up-section-title">
+          Perguntas frequentes
+        </h2>
+
+        <div class="up-faq__lista" role="list">
+
+          <article class="up-accordion up-card" role="listitem">
+            <button
+              class="up-accordion__trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-1-body"
+              id="faq-1-trigger"
+            >
+              <span>Preciso ter alguma experiência com exercícios?</span>
+              <span class="up-accordion__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div
+              class="up-accordion__body"
+              id="faq-1-body"
+              role="region"
+              aria-labelledby="faq-1-trigger"
+              hidden
+            >
+              <p>
+                Não. O Projeto Recomeço foi criado especificamente para pessoas sedentárias.
+                O programa começa do zero — com movimentos simples, curtos e completamente
+                adaptáveis ao seu nível atual. Não é necessário nenhum conhecimento prévio.
+              </p>
+            </div>
+          </article>
+
+          <article class="up-accordion up-card" role="listitem">
+            <button
+              class="up-accordion__trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-2-body"
+              id="faq-2-trigger"
+            >
+              <span>Preciso de algum equipamento ou academia?</span>
+              <span class="up-accordion__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div
+              class="up-accordion__body"
+              id="faq-2-body"
+              role="region"
+              aria-labelledby="faq-2-trigger"
+              hidden
+            >
+              <p>
+                Zero equipamentos. Zero academia. As missões foram desenhadas para serem feitas
+                em qualquer lugar — em casa, no trabalho, na rua. Tudo que você precisa
+                é do seu próprio corpo e de 15 a 30 minutos por dia.
+              </p>
+            </div>
+          </article>
+
+          <article class="up-accordion up-card" role="listitem">
+            <button
+              class="up-accordion__trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-3-body"
+              id="faq-3-trigger"
+            >
+              <span>O que acontece se eu perder um dia?</span>
+              <span class="up-accordion__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div
+              class="up-accordion__body"
+              id="faq-3-body"
+              role="region"
+              aria-labelledby="faq-3-trigger"
+              hidden
+            >
+              <p>
+                Você continua do dia seguinte. Perder um dia não apaga o progresso — apagar
+                o progresso seria desistir. O programa permanece disponível no seu acesso
+                e você retoma de onde parou, sem culpa e sem punição.
+              </p>
+            </div>
+          </article>
+
+          <article class="up-accordion up-card" role="listitem">
+            <button
+              class="up-accordion__trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-4-body"
+              id="faq-4-trigger"
+            >
+              <span>As receitas são complicadas ou caras?</span>
+              <span class="up-accordion__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div
+              class="up-accordion__body"
+              id="faq-4-body"
+              role="region"
+              aria-labelledby="faq-4-trigger"
+              hidden
+            >
+              <p>
+                Todas as receitas têm no máximo 10 ingredientes acessíveis e levam menos de
+                10 minutos para preparar. Foram pensadas para a realidade brasileira —
+                ingredientes encontrados em qualquer mercado, sem produtos importados ou caros.
+              </p>
+            </div>
+          </article>
+
+          <article class="up-accordion up-card" role="listitem">
+            <button
+              class="up-accordion__trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-5-body"
+              id="faq-5-trigger"
+            >
+              <span>Por quanto tempo terei acesso ao programa?</span>
+              <span class="up-accordion__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div
+              class="up-accordion__body"
+              id="faq-5-body"
+              role="region"
+              aria-labelledby="faq-5-trigger"
+              hidden
+            >
+              <p>
+                O acesso é vitalício. Uma vez que você adquire o Projeto Recomeço,
+                ele fica disponível para sempre — para repetir quantas vezes quiser,
+                presentear alguém ou retomar em qualquer momento da vida.
+              </p>
+            </div>
+          </article>
+
+          <article class="up-accordion up-card" role="listitem">
+            <button
+              class="up-accordion__trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="faq-6-body"
+              id="faq-6-trigger"
+            >
+              <span>O programa é indicado para pessoas com condições de saúde?</span>
+              <span class="up-accordion__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+            <div
+              class="up-accordion__body"
+              id="faq-6-body"
+              role="region"
+              aria-labelledby="faq-6-trigger"
+              hidden
+            >
+              <p>
+                O Projeto Recomeço foi desenhado para iniciantes em geral. Porém,
+                se você tem alguma condição de saúde pré-existente, recomendamos
+                consultar um médico antes de iniciar qualquer programa de atividade física —
+                conforme orientação da Sociedade Brasileira de Medicina do Exercício e do Esporte.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- OFERTA / CTA -->
+    <!-- ========================================= -->
+    <section id="oferta" class="up-oferta" aria-labelledby="oferta-titulo">
+      <div class="container">
+
+        <div class="up-oferta__card up-card">
+
+          <div class="up-oferta__header">
+            <div class="up-section-label" aria-hidden="true">Comece hoje</div>
+            <h2 id="oferta-titulo" class="up-oferta__title">
+              Projeto Recomeço
+            </h2>
+            <p class="up-oferta__slogan">
+              Um Plano. Vinte e Um Dias. Zero Academia.
+            </p>
+          </div>
+
+          <div class="up-oferta__conteudo">
+            <h3 class="up-oferta__conteudo-titulo">O que está incluído</h3>
+            <ul class="up-oferta__lista" aria-label="Conteúdo incluído no programa">
+              <li class="up-oferta__lista-item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9l4 4 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                21 dias de programa completo — missão, movimento e reflexão
+              </li>
+              <li class="up-oferta__lista-item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9l4 4 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                21 receitas anti-inflamatórias acessíveis
+              </li>
+              <li class="up-oferta__lista-item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9l4 4 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Calendário de progresso interativo
+              </li>
+              <li class="up-oferta__lista-item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9l4 4 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Diário de reflexão diária com registro privado
+              </li>
+              <li class="up-oferta__lista-item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9l4 4 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Explicações científicas em linguagem simples
+              </li>
+              <li class="up-oferta__lista-item">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9l4 4 7-7" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Acesso vitalício — sem mensalidade
+              </li>
+            </ul>
+          </div>
+
+          <div class="up-oferta__preco" aria-label="Preço do programa">
+            <span class="up-oferta__preco-de" aria-label="De">De R$ 97,00</span>
+            <div class="up-oferta__preco-por">
+              <span class="up-oferta__preco-label">por apenas</span>
+              <strong class="up-oferta__preco-valor" aria-label="Por R$ 49,90">R$ 49,90</strong>
+            </div>
+            <span class="up-oferta__preco-parcela">ou 5x de R$ 9,99 sem juros</span>
+          </div>
+
+          <div class="up-oferta__cta">
+            <!-- Ponto de integração Kiwify -->
+            <a
+              href="#kiwify-checkout"
+              class="up-button up-button--primary up-button--xl up-oferta__cta-button"
+              id="kiwifyCheckoutBtn"
+              aria-label="Comprar Projeto Recomeço por R$ 49,90"
+              data-kiwify-product=""
+            >
+              Quero começar agora — R$ 49,90
+            </a>
+            <p class="up-oferta__cta-seguranca" aria-label="Informações de segurança de pagamento">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 2L3 4v3.5c0 2.485 1.79 4.8 4 5.5 2.21-.7 4-3.015 4-5.5V4L7 2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+              Compra 100% segura · Acesso imediato · Garantia de 7 dias
+            </p>
+          </div>
+
+          <div class="up-oferta__garantia-mini" aria-label="Lembrete de garantia">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3L4 6v4.5c0 3.038 2.188 5.872 6 6.5 3.812-.628 6-3.462 6-6.5V6L10 3z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M7 10l2.5 2.5L13 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>7 dias de garantia total — sem perguntas</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================= -->
+  <!-- RODAPÉ -->
+  <!-- ========================================= -->
+  <footer class="up-footer" role="contentinfo">
+    <div class="up-footer__inner container">
+
+      <div class="up-footer__top">
+        <div class="up-footer__brand">
+          <span class="up-footer__brand-name">Recomeço</span>
+          <p class="up-footer__brand-slogan">
+            Um Plano. Vinte e Um Dias. Zero Academia.
+          </p>
+        </div>
+
+        <nav class="up-footer__nav" aria-label="Links do rodapé">
+          <a href="#inicio" class="up-footer__link">Início</a>
+          <a href="#diagnostico" class="up-footer__link">Diagnóstico</a>
+          <a href="#metodo" class="up-footer__link">Método</a>
+          <a href="#faq" class="up-footer__link">FAQ</a>
+          <a href="#oferta" class="up-footer__link">Comprar</a>
+        </nav>
+      </div>
+
+      <hr class="up-footer__divider" aria-hidden="true" />
+
+      <div class="up-footer__bottom">
+        <p class="up-footer__legal">
+          © <span id="footerAno"></span> Projeto Recomeço. Todos os direitos reservados.
+        </p>
+        <nav class="up-footer__legal-nav" aria-label="Links legais">
+          <a href="/privacidade" class="up-footer__legal-link">Política de Privacidade</a>
+          <a href="/termos" class="up-footer__legal-link">Termos de Uso</a>
+        </nav>
+        <p class="up-footer__disclaimer">
+          As informações deste programa têm finalidade educativa e de bem-estar geral.
+          Não substituem orientação médica individualizada.
+          Consulte um profissional de saúde antes de iniciar qualquer programa de atividade física.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================= -->
+  <!-- JS -->
+  <!-- ========================================= -->
+  <script src="js/utils.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/animation.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/app.js" defer></script>
+
+</body>
+</html>

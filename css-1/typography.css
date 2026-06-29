@@ -1,0 +1,106 @@
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* ----------------------------------------
+   HEADINGS
+---------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+h5 { font-size: var(--text-md); }
+h6 { font-size: var(--text-base); }
+
+em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+strong {
+  font-weight: var(--weight-semi);
+}
+
+/* ----------------------------------------
+   TÍTULOS DE SEÇÃO
+---------------------------------------- */
+
+.up-section-label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semi);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-4);
+}
+
+.up-section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text);
+  margin-bottom: var(--space-5);
+}
+
+.up-section-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-loose);
+  color: var(--color-text-mid);
+  max-width: 56ch;
+  margin-bottom: var(--space-12);
+}
+
+/* ----------------------------------------
+   PARÁGRAFO BASE
+---------------------------------------- */
+
+p {
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-text-mid);
+}
+
+/* ----------------------------------------
+   CITAÇÕES
+---------------------------------------- */
+
+blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-text-soft);
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projeto Recomeço — Dia 2: Acompanhe sua missão diária." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#F7F5F2" />
+  <title>Dia 2 · Projeto Recomeço</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="dia.css" />
+</head>
+<body class="dia-body">
+  <nav class="up-navbar up-navbar--dia" aria-label="Navegação superior">
+    <div class="container up-navbar__inner">
+      <a href="dashboard.html" class="up-navbar__back" aria-label="Voltar ao painel">← Painel</a>
+      <div class="up-navbar__dia-center">
+        <div class="up-navbar__dia-progress">
+          <div class="up-navbar__dia-bar" id="navProgressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="up-navbar__dia-bar-fill" id="navProgressFill" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="up-dia-main">
+    <div class="container container--sm">
+      <header class="up-dia-hero">
+        <div class="up-dia-hero__status-badge">
+          <span class="up-dia-hero__status-dot"></span>
+          <span id="diaStatusLabel">Carregando...</span>
+        </div>
+        <h1 class="up-dia-hero__title" id="diaObjetivoText">Carregando objetivo...</h1>
+      </header>
+
+      <section class="up-dia-section" aria-labelledby="secao-missao">
+        <div class="up-card">
+          <h2 id="secao-missao" class="up-section-label">Sua Missão</h2>
+          <p class="up-dia-missao__desc" id="diaMissaoText">Carregando detalhes da missão...</p>
+          <ul class="up-dia-checklist" id="diaChecklistContainer"></ul>
+        </div>
+      </section>
+
+      <section class="up-dia-section" aria-labelledby="secao-nutricao">
+        <div class="up-card">
+          <h2 id="secao-nutricao" class="up-section-label">Apoio Nutricional</h2>
+          <div class="up-recipe__header-meta">
+            <span class="up-recipe__tag" id="recipeTag">Carregando...</span>
+            <span class="up-recipe__time" id="recipeTime">-- min</span>
+          </div>
+          <h3 class="up-recipe__title" id="recipeTitle">Carregando receita...</h3>
+          <p class="up-recipe__desc" id="recipeDesc">Carregando descrição...</p>
+          <div class="up-recipe__ingredients-box">
+            <h4 class="up-recipe__ingredients-title">Ingredientes</h4>
+            <ul class="up-recipe__ingredients-list" id="recipeIngredientsList"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="up-dia-section" aria-labelledby="secao-diario">
+        <div class="up-card">
+          <h2 id="secao-diario" class="up-section-label">Diário de Bordo</h2>
+          <p class="up-dash-diary__subtitle">Como foi a experiência de hoje?</p>
+          <div class="up-dash-diary__emojis" role="group" aria-label="Selecione seu humor hoje">
+            <button type="button" class="up-dash-diary__emoji-btn" data-humor="bem" aria-pressed="false">😊 <span>Bem</span></button>
+            <button type="button" class="up-dash-diary__emoji-btn" data-humor="neutro" aria-pressed="false">😐 <span>Neutro</span></button>
+            <button type="button" class="up-dash-diary__emoji-btn" data-humor="cansado" aria-pressed="false">😪 <span>Cansado</span></button>
+          </div>
+          <textarea class="up-dash-diary__textarea" id="diaDiaryText" placeholder="Escreva suas reflexões sobre o dia de hoje..." aria-label="Reflexões sobre o dia"></textarea>
+          <footer class="up-dash-diary__footer">
+            <button type="button" class="up-button up-button--secondary up-button--sm" id="diaDiarySave">Salvar reflexão</button>
+            <span class="up-dash-diary__saved-label" id="diaDiarySavedLabel" aria-live="polite" hidden>Salvo ✓</span>
+          </footer>
+        </div>
+      </section>
+
+      <section class="up-dia-final" aria-labelledby="final-titulo">
+        <div class="up-dia-final__inner up-card">
+          <span class="up-dia-final__icon" aria-hidden="true">🌱</span>
+          <h2 id="final-titulo" class="up-dia-final__title">Missão Cumprida?</h2>
+          <p class="up-dia-final__text">Cada dia concluído é um passo firme em direção a uma rotina mais saudável.</p>
+          <div class="up-dia-final__actions">
+            <button type="button" class="up-button up-button--primary up-button--lg" id="diaConcluirBtn">Concluir Dia 2</button>
+            <a href="dashboard.html" class="up-button up-button--ghost up-button--lg">Voltar ao painel</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="../js/utils.js" defer></script>
+  <script src="../js/storage.js" defer></script>
+  <script src="../js/progress.js" defer></script>
+  <script src="../js/dashboard.js" defer></script>
+  <script src="dia02.js" defer></script>
+</body>
+</html>

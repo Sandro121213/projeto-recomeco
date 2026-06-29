@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projeto Recomeço — Dia 21: Você chegou." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#F7F5F2" />
+  <title>Dia 21 — Você chegou · Projeto Recomeço</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="dia.css" />
+</head>
+<body class="dia-body">
+  <header class="up-navbar up-navbar--dia" role="banner">
+    <nav class="up-navbar__inner container" aria-label="Navegação do programa">
+      <a href="dashboard.html" class="up-navbar__back" aria-label="Voltar ao painel">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 5l-5 5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Painel</span>
+      </a>
+      <div class="up-navbar__dia-center"><span class="up-badge">Dia 21 de 21</span></div>
+      <div class="up-navbar__dia-progress" aria-label="Progresso geral">
+        <div class="up-navbar__dia-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progresso do programa" id="navProgressBar">
+          <div class="up-navbar__dia-bar-fill" id="navProgressFill" style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal" class="dia-main">
+    <div class="container container--mid">
+
+      <!-- ========================================= -->
+      <!-- HERO -->
+      <!-- ========================================= -->
+      <section class="up-dia-hero" aria-labelledby="dia-titulo">
+        <div class="up-dia-hero__meta">
+          <span class="up-badge">Semana 3 — Transformação</span>
+          <span class="up-dia-hero__numero" aria-hidden="true">21</span>
+        </div>
+        <h1 id="dia-titulo" class="up-dia-hero__title">Você chegou</h1>
+        <p class="up-dia-hero__subtitulo">Você fez. Vinte e um dias. Isso é seu — para sempre.</p>
+        <div class="up-dia-hero__status" id="diaHeroStatus">
+          <span class="up-dia-hero__status-dot" aria-hidden="true"></span>
+          <span class="up-dia-hero__status-label" id="diaStatusLabel">Missão pendente</span>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- OBJETIVO -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="objetivo-titulo">
+        <h2 id="objetivo-titulo" class="up-dia-section-title">Objetivo do dia</h2>
+        <div class="up-dia-objetivo up-card" data-animate>
+          <figure class="up-dia-objetivo__icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="1.5"/>
+              <path d="M13 20l5 5 9-9" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </figure>
+          <div class="up-dia-objetivo__content">
+            <p class="up-dia-objetivo__text" id="diaObjetivoText">Carregando missão...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- MISSÃO -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="missao-titulo">
+        <h2 id="missao-titulo" class="up-dia-section-title">Sua missão</h2>
+        <div class="up-dia-missao up-card" data-animate>
+          <p class="up-dia-missao__texto" id="diaMissaoText">Carregando detalhes...</p>
+          <aside class="up-dia-missao__dica" aria-label="Dica para a missão">
+            <span class="up-dia-missao__dica-icon" aria-hidden="true">💡</span>
+            <p class="up-dia-missao__dica-texto">Se parecer difícil, faça menos. O que importa é aparecer.</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- CHECKLIST -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="checklist-titulo">
+        <h2 id="checklist-titulo" class="up-dia-section-title">Checklist</h2>
+        <div class="up-dia-checklist up-card" data-animate role="group" aria-label="Checklist do Dia 21" id="diaChecklist"></div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- CIÊNCIA -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="ciencia-titulo">
+        <h2 id="ciencia-titulo" class="up-dia-section-title">Por que funciona</h2>
+        <article class="up-dia-ciencia up-card" data-animate>
+          <header class="up-dia-ciencia__header">
+            <span class="up-badge">Ciência</span>
+            <h3 class="up-dia-ciencia__titulo">Evidências do movimento de hoje</h3>
+          </header>
+          <div class="up-dia-ciencia__corpo" id="diaCienciaCorpo">
+            <p>Carregando explicação científica...</p>
+          </div>
+          <footer class="up-dia-ciencia__fonte">
+            <p>Fontes: ACSM · OMS · Sociedade Brasileira de Medicina do Exercício e do Esporte</p>
+          </footer>
+        </article>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- CURIOSIDADE -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="curiosidade-titulo">
+        <h2 id="curiosidade-titulo" class="up-dia-section-title">Curiosidade do dia</h2>
+        <div class="up-dia-curiosidade up-card" data-animate>
+          <span class="up-dia-curiosidade__icon" aria-hidden="true">🧠</span>
+          <p class="up-dia-curiosidade__texto" id="diaCuriosidadeText">Carregando curiosidade...</p>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- RECEITA -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="receita-titulo">
+        <h2 id="receita-titulo" class="up-dia-section-title">Receita do dia</h2>
+        <article class="up-dia-recipe up-card" data-animate>
+          <header class="up-dia-recipe__header">
+            <div>
+              <span class="up-badge up-badge--sm" id="diaRecipeBadge">Receita</span>
+              <h3 class="up-dia-recipe__title" id="diaRecipeTitle">Receita do Dia 21</h3>
+            </div>
+            <button type="button" class="up-dia-recipe__fav" id="diaRecipeFav" aria-label="Adicionar aos favoritos" aria-pressed="false">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 17s-7-4.5-7-9a4 4 0 018 0 4 4 0 018 0c0 4.5-7 9-7 9z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </button>
+          </header>
+          <p class="up-dia-recipe__desc" id="diaRecipeDesc">Carregando receita...</p>
+          <div class="up-dia-recipe__grid">
+            <div class="up-dia-recipe__ingredientes">
+              <h4 class="up-dia-recipe__sub">Ingredientes</h4>
+              <ul id="diaRecipeIngredients" aria-label="Ingredientes"></ul>
+            </div>
+            <div class="up-dia-recipe__preparo">
+              <h4 class="up-dia-recipe__sub">Modo de preparo</h4>
+              <ol id="diaRecipePreparo" aria-label="Modo de preparo"></ol>
+            </div>
+          </div>
+          <footer class="up-dia-recipe__footer">
+            <div class="up-dia-recipe__nutrição" id="diaRecipeTags" aria-label="Benefícios"></div>
+          </footer>
+        </article>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- DIÁRIO -->
+      <!-- ========================================= -->
+      <section class="up-dia-section" aria-labelledby="diario-titulo">
+        <h2 id="diario-titulo" class="up-dia-section-title">Diário do Dia 21</h2>
+        <div class="up-dia-diary up-card" data-animate>
+          <div class="up-dia-diary__humor" role="group" aria-label="Como você se sentiu hoje?">
+            <p class="up-dia-diary__label">Como você se sentiu após a missão?</p>
+            <div class="up-dia-diary__emojis" id="diaDiaryEmojis">
+              <button type="button" class="up-diary-emoji" data-humor="otimo"   aria-label="Ótimo"   aria-pressed="false">😊</button>
+              <button type="button" class="up-diary-emoji" data-humor="bem"     aria-label="Bem"     aria-pressed="false">🙂</button>
+              <button type="button" class="up-diary-emoji" data-humor="neutro"  aria-label="Neutro"  aria-pressed="false">😐</button>
+              <button type="button" class="up-diary-emoji" data-humor="cansado" aria-label="Cansado" aria-pressed="false">😔</button>
+            </div>
+          </div>
+          <div class="up-dia-diary__field">
+            <label class="up-dia-diary__field-label" for="diaDiaryText">O que você percebeu hoje?</label>
+            <textarea class="up-dash-diary__textarea" id="diaDiaryText" name="diaDiaryText" rows="4" placeholder="Escreva livremente. Não precisa ser bonito. Só precisa ser verdadeiro." aria-describedby="diaDiaryHint"></textarea>
+            <p class="up-dash-diary__hint" id="diaDiaryHint">Suas reflexões são salvas no seu dispositivo. Só você tem acesso.</p>
+          </div>
+          <footer class="up-dia-diary__footer">
+            <button type="button" class="up-button up-button--primary up-button--md" id="diaDiarySave" aria-label="Salvar reflexão do Dia 21">Salvar reflexão</button>
+            <span class="up-dash-diary__saved-label" id="diaDiarySavedLabel" aria-live="polite" hidden>Salvo ✓</span>
+          </footer>
+        </div>
+      </section>
+
+      <!-- ========================================= -->
+      <!-- MENSAGEM FINAL -->
+      <!-- ========================================= -->
+      <section class="up-dia-final" aria-labelledby="final-titulo">
+        <div class="up-dia-final__inner up-card">
+          <span class="up-dia-final__icon" aria-hidden="true">🏆</span>
+          <h2 id="final-titulo" class="up-dia-final__title">Dia 21 concluído.</h2>
+          <p class="up-dia-final__text">Cada dia que você aparece é uma prova de que você pode. Continue.</p>
+          <div class="up-dia-final__actions">
+            <button type="button" class="up-button up-button--primary up-button--lg" id="diaConcluirBtn" aria-label="Marcar Dia 21 como concluído">Concluir Dia 21</button>
+            <a href="dashboard.html" class="up-button up-button--ghost up-button--lg" aria-label="Voltar ao painel">Voltar ao painel</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="../js/utils.js" defer></script>
+  <script src="../js/storage.js" defer></script>
+  <script src="../js/animation.js" defer></script>
+  <script src="../js/progress.js" defer></script>
+  <script src="../js/ui.js" defer></script>
+  <script src="dia21.js" defer></script>
+</body>
+</html>

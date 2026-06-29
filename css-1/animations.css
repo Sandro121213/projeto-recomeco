@@ -1,0 +1,302 @@
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+/* ----------------------------------------
+   KEYFRAMES
+---------------------------------------- */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.04); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes accordionOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toastOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+}
+
+@keyframes progressFill {
+  from { width: 0%; }
+}
+
+@keyframes checkDraw {
+  from {
+    stroke-dashoffset: 40;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------
+   CLASSES UTILITÁRIAS DE ANIMAÇÃO
+---------------------------------------- */
+
+.anim-fade-in {
+  animation: fadeIn var(--transition-slow) both;
+}
+
+.anim-fade-in-up {
+  animation: fadeInUp var(--transition-slow) both;
+}
+
+.anim-scale-in {
+  animation: scaleIn var(--transition-slow) both;
+}
+
+.anim-slide-left {
+  animation: slideInLeft var(--transition-slow) both;
+}
+
+.anim-slide-right {
+  animation: slideInRight var(--transition-slow) both;
+}
+
+/* Delays utilitários */
+.anim-delay-1 { animation-delay: 100ms; }
+.anim-delay-2 { animation-delay: 200ms; }
+.anim-delay-3 { animation-delay: 300ms; }
+.anim-delay-4 { animation-delay: 400ms; }
+.anim-delay-5 { animation-delay: 500ms; }
+
+/* ----------------------------------------
+   INTERSECTION OBSERVER — ESTADOS
+---------------------------------------- */
+
+/* Estado inicial: invisível antes de entrar na viewport */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+/* Estado ativo: quando o elemento entra na viewport */
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-animate="scale"] {
+  transform: scale(0.95);
+}
+
+[data-animate="scale"].is-visible {
+  transform: scale(1);
+}
+
+[data-animate="left"] {
+  transform: translateX(-24px);
+}
+
+[data-animate="left"].is-visible {
+  transform: translateX(0);
+}
+
+[data-animate="right"] {
+  transform: translateX(24px);
+}
+
+[data-animate="right"].is-visible {
+  transform: translateX(0);
+}
+
+/* ----------------------------------------
+   ACCORDION
+---------------------------------------- */
+
+.up-accordion__body:not([hidden]) {
+  animation: accordionOpen var(--transition-base) both;
+}
+
+/* ----------------------------------------
+   TOAST
+---------------------------------------- */
+
+.up-toast {
+  animation: toastIn var(--transition-base) both;
+}
+
+.up-toast.is-leaving {
+  animation: toastOut var(--transition-base) both;
+}
+
+/* ----------------------------------------
+   PROGRESS BAR
+---------------------------------------- */
+
+.up-progress__fill {
+  animation: progressFill 800ms var(--transition-slow) both;
+}
+
+/* ----------------------------------------
+   HERO DAYS STRIP
+---------------------------------------- */
+
+.up-hero__day {
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-spring);
+}
+
+.up-hero__day:hover {
+  transform: translateY(-2px);
+}
+
+/* ----------------------------------------
+   BOTÃO PULSE (CTA PRINCIPAL)
+---------------------------------------- */
+
+.up-button--primary:not(:hover):not(:active) {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Parar pulse ao fazer hover */
+.up-button--primary:hover {
+  animation: none;
+}
+
+/* ----------------------------------------
+   QUIZ OPTION SELECIONADA
+---------------------------------------- */
+
+.up-quiz__input:checked + .up-quiz__option-inner {
+  animation: scaleIn 200ms var(--transition-spring) both;
+}
+
+/* ----------------------------------------
+   CARD HOVER
+---------------------------------------- */
+
+.up-card {
+  transition:
+    box-shadow var(--transition-base),
+    transform var(--transition-base),
+    border-color var(--transition-base);
+}
+
+.up-beneficio.up-card:hover,
+.up-problema__item.up-card:hover,
+.up-recipe.up-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ----------------------------------------
+   NAVBAR SCROLL
+---------------------------------------- */
+
+.up-navbar {
+  transition: box-shadow var(--transition-base);
+}
+
+.up-navbar.is-scrolled {
+  box-shadow: var(--shadow-sm);
+}
+
+/* ----------------------------------------
+   RESULTADO DO QUIZ (REVEAL)
+---------------------------------------- */
+
+.up-resultado__card {
+  animation: scaleIn var(--transition-slow) both;
+}
